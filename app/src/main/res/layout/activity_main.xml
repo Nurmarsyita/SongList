@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:text="@string/song_list"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSongTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/song_title"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etSongTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_song_title_here"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvSingers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/singers"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etSingers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_singers_name_here"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_year_of_release_here"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvStars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stars"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/rgStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_4" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnInsert"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/insert" />
+
+        <Button
+            android:id="@+id/btnShow"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/show_list" />
+    </LinearLayout>
+
+</LinearLayout>
